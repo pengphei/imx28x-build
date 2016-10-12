@@ -619,5 +619,7 @@ u32 setup_tags (void)
 }
 
 /* workaround gcc 4.3 link error*/
-void __aeabi_unwind_cpp_pr1() {}
+void __aeabi_unwind_cpp_pr1() {} 
+extern void __aeabi_unwind_cpp_pr1() __attribute__ ((weak));
+
 

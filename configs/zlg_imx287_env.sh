@@ -1,6 +1,6 @@
 #
 # build scripts for ZLG IMX28x Board
-# Author: Han Pengfei <pengphei@sina.com>
+# Author: Han Pengfei <pengphei@foxmail.com>
 #
 
 export BUILD_TRUNK=$(pwd)
@@ -20,6 +20,7 @@ export PATH=$PATH:${BUILD_TOOLCHAIN_PATH}:${BUILD_UBOOT_PATH}/tools:${BUILD_TRUN
 export LANG=C
 export LC_ALL=C
 
+# prepare building environment
 function build_prepare()
 {
     if [ ! -d ${BUILD_TRUNK_OUT} ]; then
@@ -27,29 +28,38 @@ function build_prepare()
     fi
 }
 
+# build uboot
 function build_uboot()
 {
-    # build uboot
-#    cd ${BUILD_UBOOT_PATH}
-#    make ARCH=${BUILD_ARCH} CROSS_COMPILE=${BUILD_CROSS_COMPILE} distclean
-#    make ARCH=${BUILD_ARCH} CROSS_COMPILE=${BUILD_CROSS_COMPILE} ${BUILD_UBOOT_CONFIG}
-#    make ARCH=${BUILD_ARCH} CROSS_COMPILE=${BUILD_CROSS_COMPILE}
-#    cp ${BUILD_UBOOT_PATH}/u-boot.bin ${BUILD_TRUNK_OUT}
-#    cp ${BUILD_UBOOT_PATH}/u-boot ${BUILD_BOOTLETS_PATH}
-
-    # build uboot with bootlex
-    cd ${BUILD_BOOTLETS_PATH}
-    if [ "i386" = ${HOSTTYPE} ];then 
-        export BUILD_ELFTOSB=elftosb_32bit
-    else 
-        export BUILD_ELFTOSB=elftosb_64bit
-    fi
-
-    
-    make CROSS_COMPILE=${BUILD_CROSS_COMPILE} ELFTOSB=${BUILD_ELFTOSB} BOARD=iMX28_EVK
+    cd ${BUILD_UBOOT_PATH}
+    make ARCH=${BUILD_ARCH} CROSS_COMPILE=${BUILD_CROSS_COMPILE} distclean
+    make ARCH=${BUILD_ARCH} CROSS_COMPILE=${BUILD_CROSS_COMPILE} ${BUILD_UBOOT_CONFIG}
+    make ARCH=${BUILD_ARCH} CROSS_COMPILE=${BUILD_CROSS_COMPILE}
+    cp ${BUILD_UBOOT_PATH}/u-boot.bin ${BUILD_TRUNK_OUT}
+    cp ${BUILD_UBOOT_PATH}/u-boot ${BUILD_BOOTLETS_PATH}
     cd -
 }
 
+# build bootlets
+function build_bootlets()
+{
+    cd ${BUILD_BOOTLETS_PATH}
+    if [ "i386" = ${HOSTTYPE} ];then
+        export BUILD_ELFTOSB=elftosb_32bit
+    else
+        export BUILD_ELFTOSB=elftosb_64bit
+    fi
+
+    # copy uboot to bootlets directory
+    cp ${BUILD_UBOOT_PATH}/u-boot ${BUILD_BOOTLETS_PATH}
+    cp ${BUILD_LINUX_PATH}/arch/${BUILD_ARCH}/boot/zImage ${BUILD_BOOTLETS_PATH}
+
+    make CROSS_COMPILE=${BUILD_CROSS_COMPILE} ELFTOSB=${BUILD_ELFTOSB} BOARD=iMX28_EVK
+
+    cd -
+}
+
+# build kernel
 function build_kernel()
 {
     cd ${BUILD_LINUX_PATH}
@@ -60,7 +70,8 @@ function build_kernel()
     else
         mkdir output
     fi
-
+    
+    # check if we have config used
     if [ ! -e .config ]; then
         cp arch/${BUILD_ARCH}/configs/${BUILD_KERNEL_CONFIG} .config
     fi
@@ -71,13 +82,20 @@ function build_kernel()
     # install modules to target directory
     make INSTALL_MOD_PATH=output ARCH=${BUILD_ARCH} CROSS_COMPILE=${BUILD_CROSS_COMPILE} modules_install
 
+    # get kernel version
     if [ -r include/generated/utsrelease.h ]; then
         KERNEL_VERSION=`cat include/generated/utsrelease.h |awk -F\" '{print $2}'`
     fi
 
-    BUILD_KERNEL_MODULES_OUT=${BUILD_LINUX_PATH}/output/lib/modules/${KERNEL_VERSION}
+    BUILD_KERNEL_MODULES_OUT=${BUILD_LINUX_PATH}/output/lib/modules
 
     cp ${BUILD_LINUX_PATH}/arch/${BUILD_ARCH}/boot/uImage ${BUILD_TRUNK_OUT}
+    cp ${BUILD_LINUX_PATH}/arch/${BUILD_ARCH}/boot/zImage ${BUILD_TRUNK_OUT}
+
+    rm -rf ${BUILD_TRUNK_OUT}/modules
+    cp -r ${BUILD_KERNEL_MODULES_OUT} ${BUILD_TRUNK_OUT}
+    rm -rf ${BUILD_TRUNK_OUT}/modules/${KERNEL_VERSION}/build
+    rm -rf ${BUILD_TRUNK_OUT}/modules/${KERNEL_VERSION}/source
 
     cd -
 }	
