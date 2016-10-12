@@ -1,7 +1,7 @@
 #
 # Automatically generated make config: don't edit
 # Linux kernel version: 2.6.35.3
-# Tue Oct 11 15:09:20 2016
+# Wed Oct 12 10:07:31 2016
 #
 CONFIG_ARM=y
 CONFIG_SYS_SUPPORTS_APM_EMULATION=y
@@ -1056,6 +1056,7 @@ CONFIG_WATCHDOG=y
 #
 # CONFIG_SOFT_WATCHDOG is not set
 CONFIG_MXS_WATCHDOG=y
+CONFIG_ZLG_WATCHDOG=y
 # CONFIG_MAX63XX_WATCHDOG is not set
 
 #
