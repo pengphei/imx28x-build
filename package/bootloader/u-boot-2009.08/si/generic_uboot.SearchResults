@@ -1,0 +1,3 @@
+---- _SP Matches (2 in 1 files) ----
+Ctype.h (include\linux):#define _SP	0x80	/* hard space (0x20) */
+Ctype.h (include\linux):#define isprint(c)	((__ismask(c)&(_P|_U|_L|_D|_SP)) != 0)
