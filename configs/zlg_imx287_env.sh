@@ -44,6 +44,7 @@ function build_uboot()
 function build_bootlets()
 {
     cd ${BUILD_BOOTLETS_PATH}
+
     if [ "i386" = ${HOSTTYPE} ];then
         export BUILD_ELFTOSB=elftosb_32bit
     else
@@ -52,9 +53,15 @@ function build_bootlets()
 
     # copy uboot to bootlets directory
     cp ${BUILD_UBOOT_PATH}/u-boot ${BUILD_BOOTLETS_PATH}
+    # copy kernel zImage to bootlets directory
     cp ${BUILD_LINUX_PATH}/arch/${BUILD_ARCH}/boot/zImage ${BUILD_BOOTLETS_PATH}
 
+    # build bootlets image
     make CROSS_COMPILE=${BUILD_CROSS_COMPILE} ELFTOSB=${BUILD_ELFTOSB} BOARD=iMX28_EVK
+    
+    # copy uboot final image to output
+
+    cp ${BUILD_BOOTLETS_PATH}/*.sb ${BUILD_TRUNK_OUT}
 
     cd -
 }
