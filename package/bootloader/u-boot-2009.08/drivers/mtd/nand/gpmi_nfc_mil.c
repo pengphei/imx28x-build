@@ -346,7 +346,7 @@ static int gpmi_nfc_ecc_read_page(struct mtd_info *mtd,
 	unsigned int            failed;
 	unsigned int            corrected;
 	int                     error = 0;
-
+	watchdog_feed();
 	MTDDEBUG(MTD_DEBUG_LEVEL3, "%s =>\n", __func__);
 
 	MTDDEBUG(MTD_DEBUG_LEVEL1, "Buf: 0x%08x, data_buf: 0x%08x, "
@@ -437,7 +437,7 @@ static void gpmi_nfc_ecc_write_page(struct mtd_info *mtd,
 	int                     error;
 	u8 *data_buf = gpmi_info->data_buf;
 	u8 *oob_buf  = gpmi_info->oob_buf;
-
+	watchdog_feed();
 	MTDDEBUG(MTD_DEBUG_LEVEL3, "%s =>\n", __func__);
 
 	MTDDEBUG(MTD_DEBUG_LEVEL1, "Buf: 0x%08x, data_buf: 0x%08x, "
@@ -645,7 +645,6 @@ static int gpmi_nfc_ecc_read_oob(struct mtd_info *mtd, struct nand_chip *nand,
 	int block_mark_column;
 
 	MTDDEBUG(MTD_DEBUG_LEVEL3, "%s =>\n", __func__);
-
 	/*
 	if (sndcmd) {
 		nand->cmdfunc(mtd, NAND_CMD_READ0, 0x00, page);
@@ -717,7 +716,6 @@ static int gpmi_nfc_ecc_write_oob(struct mtd_info *mtd,
 	int                       block_mark_column;
 	int                       status;
 	int                       error = 0;
-
 	MTDDEBUG(MTD_DEBUG_LEVEL3, "%s =>\n", __func__);
 	/*
 	 * There are fundamental incompatibilities between the i.MX GPMI NFC and

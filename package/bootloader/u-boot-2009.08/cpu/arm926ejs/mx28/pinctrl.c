@@ -129,4 +129,20 @@ void pin_set_group(struct pin_group *pin_group)
 		pin_set_pullup(pin->id, pin->pullup);
 	}
 }
+void watchdog_feed(void)
+{
+	static int value = 1;
+
+	pin_set_type(PINID_GPMI_RDY1, PIN_GPIO);
+	pin_gpio_direction(PINID_GPMI_RDY1, 1);
+	if(value == 0)
+		value = 1;
+	else
+		value = 0;
+
+	pin_gpio_set(PINID_GPMI_RDY1, value);
+
+}
+
+
 

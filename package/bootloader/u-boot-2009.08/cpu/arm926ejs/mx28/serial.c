@@ -92,7 +92,11 @@ void serial_putc(const char c)
 void serial_puts(const char *s)
 {
 	while (*s)
+	{
+		watchdog_feed();
 		serial_putc(*s++);
+		watchdog_feed();
+	}
 }
 
 /* Test whether a character is in TX buffer */
@@ -105,10 +109,17 @@ int serial_tstc(void)
 /* Receive character */
 int serial_getc(void)
 {
+	int tick = 1000;
 	/* Wait while TX FIFO is empty */
 	while (REG_RD(REGS_UARTDBG_BASE, HW_UARTDBGFR) & BM_UARTDBGFR_RXFE)
-		;
-
+	{	
+		if((tick--) == 0)
+		{
+			watchdog_feed();
+			tick = 1000;
+		}
+	}
+	watchdog_feed();
 	/* Read data byte */
 	return REG_RD(REGS_UARTDBG_BASE, HW_UARTDBGDR) & 0xff;
 }

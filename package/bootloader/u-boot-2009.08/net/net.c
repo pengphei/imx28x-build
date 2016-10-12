@@ -462,6 +462,7 @@ restart:
 	 */
 	for (;;) {
 		WATCHDOG_RESET();
+		watchdog_feed();
 #ifdef CONFIG_SHOW_ACTIVITY
 		{
 			extern void show_activity(int arg);
