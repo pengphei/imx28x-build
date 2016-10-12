@@ -75,7 +75,16 @@ static struct spi_board_info spi_board_info[] __initdata = {
                 .max_speed_hz = 20000000,     /* max spi clock (SCK) speed in HZ */
                 .bus_num = 1, /* Framework bus number */
                 .chip_select = 0, /* Framework chip select.0:ssn0 1 ssn1 2 ssn2 */
+	},
+	/*  add by zlg-zh */
+	{
+		/* the modalias must be the same as spi device driver name */
+                .modalias = "spidev", /* Name of spi_driver for this device */
+                .max_speed_hz = 20000000,     /* max spi clock (SCK) speed in HZ */
+                .bus_num = 2, /* Framework bus number */
+                .chip_select = 0, /* Framework chip select.0:ssn0 1 ssn1 2 ssn2 */
 	}
+	/* zlg-zh end */
 };
 
 static void spi_device_init(void)

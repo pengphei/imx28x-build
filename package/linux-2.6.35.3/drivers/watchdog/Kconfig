@@ -237,6 +237,14 @@ config MXS_WATCHDOG
 	  To compile this driver as a module, choose M here: the
 	  module will be called mxs_wdt.
 
+config ZLG_WATCHDOG
+        tristate "zlg extern  watchdog"
+        help
+          Say Y here if to include support for the watchdog timer
+          for the extern zlg watchdog.
+          To compile this driver as a module, choose M here: the
+          module will be called zlg_wdt.
+
 config IOP_WATCHDOG
 	tristate "IOP Watchdog"
 	depends on PLAT_IOP

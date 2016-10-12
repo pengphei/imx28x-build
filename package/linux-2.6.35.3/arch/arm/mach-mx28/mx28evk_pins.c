@@ -1287,6 +1287,40 @@ static struct pin_desc mx28evk_spi_pins[] = {
 	 .voltage	= PAD_3_3V,
 	 .drive 	= 1,
 	 },
+	/* add by zlg-zh */
+	{
+	 .name	= "SSP3 MOSI",
+	 .id	= PINID_SSP3_MOSI,
+	 .fun	= PIN_FUN1,
+	 .strength	= PAD_4MA,
+	 .voltage	= PAD_3_3V,
+	 .drive 	= 1,
+	 },
+	{
+	 .name	= "SSP3 MISO",
+	 .id	= PINID_SSP3_MISO,
+	 .fun	= PIN_FUN1,
+	 .strength	= PAD_4MA,
+	 .voltage	= PAD_3_3V,
+	 .drive 	= 1,
+	 },
+	{
+	 .name	= "SSP3 SCK",
+	 .id	= PINID_SSP3_SCK,
+	 .fun	= PIN_FUN1,
+	 .strength	= PAD_4MA,
+	 .voltage	= PAD_3_3V,
+	 .drive 	= 1,
+	 },
+	{
+	 .name	= "SSP3 SS0",
+	 .id	= PINID_SSP3_SS0,
+	 .fun	= PIN_FUN1,
+	 .strength	= PAD_8MA,
+	 .voltage	= PAD_3_3V,
+	 .drive 	= 1,
+	 },
+	/* zlg-zh end */
 };
 #endif
 

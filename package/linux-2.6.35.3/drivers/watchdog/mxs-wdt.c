@@ -29,7 +29,6 @@
 #define WDT_OK_TO_CLOSE		1
 
 #define WDOG_COUNTER_RATE	1000 /* 1 kHz clock */
-
 static unsigned long wdt_status;
 static int heartbeat = DEFAULT_HEARTBEAT;
 static unsigned long boot_status;

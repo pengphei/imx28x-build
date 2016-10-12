@@ -690,7 +690,30 @@ static struct resource ssp2_resources[] = {
 		.flags	= IORESOURCE_IRQ,
 	},
 };
-
+/* add by zlg-zh */
+static struct mxs_spi_platform_data spi3_data = {
+	.clk = "ssp.3",
+};
+static struct resource ssp3_resources[] = {
+	{
+		.start	= SSP3_PHYS_ADDR,
+		.end	= SSP3_PHYS_ADDR + 0x2000 - 1,
+		.flags	= IORESOURCE_MEM,
+	}, {
+		.start	= MXS_DMA_CHANNEL_AHB_APBH_SSP3,
+		.end	= MXS_DMA_CHANNEL_AHB_APBH_SSP3,
+		.flags	= IORESOURCE_DMA,
+	}, {
+		.start	= IRQ_SSP3_DMA,
+		.end	= IRQ_SSP3_DMA,
+		.flags	= IORESOURCE_IRQ,
+	}, {
+		.start	= IRQ_SSP3,
+		.end	= IRQ_SSP3,
+		.flags	= IORESOURCE_IRQ,
+	},
+};
+/* zlg-zh end */
 static void __init mx28_init_spi(void)
 {
 	struct platform_device *pdev;
@@ -702,6 +725,16 @@ static void __init mx28_init_spi(void)
 	pdev->dev.platform_data = &spi_data;
 
 	mxs_add_device(pdev, 3);
+	/* add by zlg-zh */
+	pdev = mxs_get_device("mxs-spi",1);
+	if (pdev == NULL || IS_ERR(pdev))
+		return;
+	pdev->resource = ssp3_resources;
+	pdev->num_resources = ARRAY_SIZE(ssp3_resources);
+	pdev->dev.platform_data = &spi3_data;
+
+	mxs_add_device(pdev, 3);
+	/* zlg-zh end */
 }
 #else
 static void mx28_init_spi(void)
