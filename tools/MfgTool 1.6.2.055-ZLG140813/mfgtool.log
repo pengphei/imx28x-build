@@ -1,0 +1,321 @@
+
+Thursday, March 12, 2015 11:27:06
+Panel A: Reason is unknown,
+Tuesday, October 11, 2016 10:04:58
+1 - Panel A Start processing NAND uboot Only <LIST/>.
+Panel A Start <CMD/> type="boot" body="Recovery" file="imx28_BootCfg.sb" timeout="10" onError="" text="Enable unencrypted boot modes.".
+1 - Panel A Finished <CMD/> type="boot" body="Recovery" file="imx28_BootCfg.sb" timeout="10" onError="" text="Enable unencrypted boot modes." SUCCESS code=0x0.
+Panel A Start <CMD/> type="boot" body="Recovery" file="imx28_BootCfg_ivt.sb" timeout="10" onError="" text="Enable unencrypted boot modes.".
+1 - Panel A DoBoot() - Failed to load imx28_BootCfg_ivt.sb to Recovery mode device. (err=8)
+1 - Panel A Finished <CMD/> type="boot" body="Recovery" file="imx28_BootCfg_ivt.sb" timeout="10" onError="" text="Enable unencrypted boot modes." FAIL code=0x8.
+Panel A: Reason is unknown,failed to run command: type="boot" body="Recovery" file="imx28_BootCfg_ivt.sb" timeout="10" onError="" text="Enable unencrypted boot modes."  2 - Panel A Finished processing NAND uboot Only <LIST/> : FAIL code=8.
+Panel A: Reason is unknown,
+Tuesday, October 11, 2016 10:06:24
+2 - Panel A Start processing NAND uboot-kernel-rootfs(128MB) <LIST/>.
+Panel A Start <CMD/> type="boot" body="Recovery" file="imx28_BootCfg.sb" timeout="10" onError="" text="Enable unencrypted boot modes.".
+2 - Panel A Finished <CMD/> type="boot" body="Recovery" file="imx28_BootCfg.sb" timeout="10" onError="" text="Enable unencrypted boot modes." SUCCESS code=0x0.
+Panel A Start <CMD/> type="boot" body="Recovery" file="imx28_BootCfg_ivt.sb" timeout="10" onError="" text="Enable unencrypted boot modes.".
+2 - Panel A DoBoot() - Failed to load imx28_BootCfg_ivt.sb to Recovery mode device. (err=8)
+2 - Panel A Finished <CMD/> type="boot" body="Recovery" file="imx28_BootCfg_ivt.sb" timeout="10" onError="" text="Enable unencrypted boot modes." FAIL code=0x8.
+Panel A: Reason is unknown,failed to run command: type="boot" body="Recovery" file="imx28_BootCfg_ivt.sb" timeout="10" onError="" text="Enable unencrypted boot modes."  3 - Panel A Finished processing NAND uboot-kernel-rootfs(128MB) <LIST/> : FAIL code=8.
+Panel A: Reason is unknown,
+Tuesday, October 11, 2016 10:09:46
+1 - Panel A Start processing NAND uboot-kernel-rootfs(128MB) <LIST/>.
+Panel A Start <CMD/> type="boot" body="Recovery" file="imx28_BootCfg.sb" timeout="10" onError="" text="Enable unencrypted boot modes.".
+1 - Panel A Finished <CMD/> type="boot" body="Recovery" file="imx28_BootCfg.sb" timeout="10" onError="" text="Enable unencrypted boot modes." SUCCESS code=0x0.
+Panel A Start <CMD/> type="boot" body="Recovery" file="imx28_BootCfg_ivt.sb" timeout="10" onError="" text="Enable unencrypted boot modes.".
+1 - Panel A Finished <CMD/> type="boot" body="Recovery" file="imx28_BootCfg_ivt.sb" timeout="10" onError="" text="Enable unencrypted boot modes." SUCCESS code=0x0.
+Panel A Start <CMD/> type="wait" body="ResetToRecovery" file="" timeout="3" onError="" text="Waiting for Reset to Recovery.".
+Panel A UtpUpdate Event: DeviceRemoval Msg: (null) DevState: Disconnected OpState: WAITING_FOR_DEVICE
+Panel A UtpUpdate Event: DeviceArrival Msg: (null) DevState: Recovery OpState: WAITING_FOR_DEVICE
+1 - Panel A Finished <CMD/> type="wait" body="ResetToRecovery" file="" timeout="3" onError="" text="Waiting for Reset to Recovery." SUCCESS code=0x0.
+Panel A Start <CMD/> type="boot" body="Recovery" file="updater.sb" timeout="60" onError="" text="Booting update firmware.".
+1 - Panel A Finished <CMD/> type="boot" body="Recovery" file="updater.sb" timeout="60" onError="" text="Booting update firmware." SUCCESS code=0x0.
+Panel A Start <CMD/> type="boot" body="Recovery" file="updater_ivt.sb" timeout="60" onError="" text="Booting update firmware.".
+1 - Panel A Finished <CMD/> type="boot" body="Recovery" file="updater_ivt.sb" timeout="60" onError="" text="Booting update firmware." SUCCESS code=0x0.
+Panel A Start <CMD/> type="find" body="Updater" file="" timeout="180" onError="" text="".
+Panel A UtpUpdate Event: DeviceRemoval Msg: (null) DevState: Disconnected OpState: WAITING_FOR_DEVICE
+Panel A UtpUpdate Event: VolumeArrival Msg: (null) DevState: Updater OpState: WAITING_FOR_DEVICE
+Panel A: Reason is unknown,
+Tuesday, October 11, 2016 10:11:38
+1 - Panel A Start processing NAND uboot-kernel-rootfs(128MB) <LIST/>.
+Panel A Start <CMD/> type="boot" body="Recovery" file="imx28_BootCfg.sb" timeout="10" onError="" text="Enable unencrypted boot modes.".
+1 - Panel A Finished <CMD/> type="boot" body="Recovery" file="imx28_BootCfg.sb" timeout="10" onError="" text="Enable unencrypted boot modes." SUCCESS code=0x0.
+Panel A Start <CMD/> type="boot" body="Recovery" file="imx28_BootCfg_ivt.sb" timeout="10" onError="" text="Enable unencrypted boot modes.".
+1 - Panel A Finished <CMD/> type="boot" body="Recovery" file="imx28_BootCfg_ivt.sb" timeout="10" onError="" text="Enable unencrypted boot modes." SUCCESS code=0x0.
+Panel A Start <CMD/> type="wait" body="ResetToRecovery" file="" timeout="3" onError="" text="Waiting for Reset to Recovery.".
+Panel A UtpUpdate Event: DeviceRemoval Msg: (null) DevState: Disconnected OpState: WAITING_FOR_DEVICE
+Panel A UtpUpdate Event: DeviceArrival Msg: (null) DevState: Recovery OpState: WAITING_FOR_DEVICE
+1 - Panel A Finished <CMD/> type="wait" body="ResetToRecovery" file="" timeout="3" onError="" text="Waiting for Reset to Recovery." SUCCESS code=0x0.
+Panel A Start <CMD/> type="boot" body="Recovery" file="updater.sb" timeout="60" onError="" text="Booting update firmware.".
+1 - Panel A Finished <CMD/> type="boot" body="Recovery" file="updater.sb" timeout="60" onError="" text="Booting update firmware." SUCCESS code=0x0.
+Panel A Start <CMD/> type="boot" body="Recovery" file="updater_ivt.sb" timeout="60" onError="" text="Booting update firmware.".
+1 - Panel A Finished <CMD/> type="boot" body="Recovery" file="updater_ivt.sb" timeout="60" onError="" text="Booting update firmware." SUCCESS code=0x0.
+Panel A Start <CMD/> type="find" body="Updater" file="" timeout="180" onError="" text="".
+Panel A UtpUpdate Event: DeviceRemoval Msg: (null) DevState: Disconnected OpState: WAITING_FOR_DEVICE
+Panel A UtpUpdate Event: VolumeArrival Msg: (null) DevState: Updater OpState: WAITING_FOR_DEVICE
+1 - Panel A Finished <CMD/> type="find" body="Updater" file="" timeout="180" onError="" text="" SUCCESS code=0x0.
+Panel A Start <CMD/> type="push" body="mknod class/mtd,mtd0,/dev/mtd0" file="" timeout="180" onError="" text="".
+1 - Panel A Finished <CMD/> type="push" body="mknod class/mtd,mtd0,/dev/mtd0" file="" timeout="180" onError="" text="" SUCCESS code=0x0.
+Panel A Start <CMD/> type="push" body="mknod class/mtd,mtd1,/dev/mtd1" file="" timeout="180" onError="" text="".
+1 - Panel A Finished <CMD/> type="push" body="mknod class/mtd,mtd1,/dev/mtd1" file="" timeout="180" onError="" text="" SUCCESS code=0x0.
+Panel A Start <CMD/> type="push" body="mknod class/misc,ubi_ctrl,/dev/ubi_ctrl" file="" timeout="10" onError="" text="".
+1 - Panel A Finished <CMD/> type="push" body="mknod class/misc,ubi_ctrl,/dev/ubi_ctrl" file="" timeout="10" onError="" text="" SUCCESS code=0x0.
+Panel A Start <CMD/> type="push" body="$ flash_eraseall /dev/mtd0" file="" timeout="10" onError="" text="Erasing mtd0 partition".
+1 - Panel A Finished <CMD/> type="push" body="$ flash_eraseall /dev/mtd0" file="" timeout="10" onError="" text="Erasing mtd0 partition" SUCCESS code=0x0.
+Panel A Start <CMD/> type="push" body="$ flash_eraseall /dev/mtd1" file="" timeout="10" onError="" text="Erasing mtd1 partition".
+1 - Panel A Finished <CMD/> type="push" body="$ flash_eraseall /dev/mtd1" file="" timeout="10" onError="" text="Erasing mtd1 partition" SUCCESS code=0x0.
+Panel A Start <CMD/> type="push" body="send" file="files/imx28_ivt_uboot.sb" timeout="10" onError="" text="Sending uboot".
+1 - Panel A Finished <CMD/> type="push" body="send" file="files/imx28_ivt_uboot.sb" timeout="10" onError="" text="Sending uboot" SUCCESS code=0x0.
+Panel A Start <CMD/> type="push" body="$ kobs-ng init -v $FILE" file="" timeout="10" onError="" text="Flashing uboot firmware".
+1 - Panel A Finished <CMD/> type="push" body="$ kobs-ng init -v $FILE" file="" timeout="10" onError="" text="Flashing uboot firmware" SUCCESS code=0x0.
+Panel A Start <CMD/> type="push" body="$ flash_erase /dev/mtd0 0x200000 32" file="" timeout="10" onError="" text="Erasing 0x200000 32".
+1 - Panel A Finished <CMD/> type="push" body="$ flash_erase /dev/mtd0 0x200000 32" file="" timeout="10" onError="" text="Erasing 0x200000 32" SUCCESS code=0x0.
+Panel A Start <CMD/> type="push" body="send" file="files/uImage" timeout="10" onError="" text="Sending uImage".
+1 - Panel A Finished <CMD/> type="push" body="send" file="files/uImage" timeout="10" onError="" text="Sending uImage" SUCCESS code=0x0.
+Panel A Start <CMD/> type="push" body="$ dd if=$FILE of=/dev/mtdblock0 bs=1M seek=2" file="" timeout="10" onError="" text="Flashing uImage firmware".
+1 - Panel A Finished <CMD/> type="push" body="$ dd if=$FILE of=/dev/mtdblock0 bs=1M seek=2" file="" timeout="10" onError="" text="Flashing uImage firmware" SUCCESS code=0x0.
+Panel A Start <CMD/> type="push" body="$ ubiattach /dev/ubi_ctrl -m 1 -d 0" file="" timeout="10" onError="" text="Attaching UBI partition".
+1 - Panel A Finished <CMD/> type="push" body="$ ubiattach /dev/ubi_ctrl -m 1 -d 0" file="" timeout="10" onError="" text="Attaching UBI partition" SUCCESS code=0x0.
+Panel A Start <CMD/> type="push" body="mknod class/ubi,ubi0,/dev/ubi0" file="" timeout="10" onError="" text="".
+1 - Panel A Finished <CMD/> type="push" body="mknod class/ubi,ubi0,/dev/ubi0" file="" timeout="10" onError="" text="" SUCCESS code=0x0.
+Panel A Start <CMD/> type="push" body="$ ubimkvol /dev/ubi0 -n 0 -N rootfs -s 90000000" file="" timeout="10" onError="" text="Creating UBI volumes".
+1 - Panel A Finished <CMD/> type="push" body="$ ubimkvol /dev/ubi0 -n 0 -N rootfs -s 90000000" file="" timeout="10" onError="" text="Creating UBI volumes" SUCCESS code=0x0.
+Panel A Start <CMD/> type="push" body="$ mkdir -p /mnt/ubi0; mount -t ubifs ubi0_0 /mnt/ubi0" file="" timeout="10" onError="" text="".
+1 - Panel A Finished <CMD/> type="push" body="$ mkdir -p /mnt/ubi0; mount -t ubifs ubi0_0 /mnt/ubi0" file="" timeout="10" onError="" text="" SUCCESS code=0x0.
+Panel A Start <CMD/> type="push" body="pipe tar -jxv -C /mnt/ubi0" file="files/rootfs.tar.bz2" timeout="180" onError="" text="Transfer rootfs".
+1 - Panel A Finished <CMD/> type="push" body="pipe tar -jxv -C /mnt/ubi0" file="files/rootfs.tar.bz2" timeout="180" onError="" text="Transfer rootfs" SUCCESS code=0x0.
+Panel A Start <CMD/> type="push" body="frf" file="" timeout="10" onError="" text="Finish Flashing rootfs".
+1 - Panel A Finished <CMD/> type="push" body="frf" file="" timeout="10" onError="" text="Finish Flashing rootfs" SUCCESS code=0x0.
+Panel A Start <CMD/> type="push" body="$ umount /mnt/ubi0" file="" timeout="10" onError="" text="Unmounting".
+1 - Panel A Finished <CMD/> type="push" body="$ umount /mnt/ubi0" file="" timeout="10" onError="" text="Unmounting" SUCCESS code=0x0.
+Panel A Start <CMD/> type="push" body="$ echo Update Complete!" file="" timeout="10" onError="" text="Done".
+1 - Panel A Finished <CMD/> type="push" body="$ echo Update Complete!" file="" timeout="10" onError="" text="Done" SUCCESS code=0x0.
+
+Tuesday, October 11, 2016 10:14:51
+**Successful Operations:	1
+**Failed Operations:	0
+
+Tuesday, October 11, 2016 14:25:23
+Panel A: Reason is unknown,
+Tuesday, October 11, 2016 14:29:49
+1 - Panel A Start processing NAND uboot-kernel-rootfs(128MB) <LIST/>.
+Panel A Start <CMD/> type="boot" body="Recovery" file="imx28_BootCfg.sb" timeout="10" onError="" text="Enable unencrypted boot modes.".
+1 - Panel A Finished <CMD/> type="boot" body="Recovery" file="imx28_BootCfg.sb" timeout="10" onError="" text="Enable unencrypted boot modes." SUCCESS code=0x0.
+Panel A Start <CMD/> type="boot" body="Recovery" file="imx28_BootCfg_ivt.sb" timeout="10" onError="" text="Enable unencrypted boot modes.".
+1 - Panel A Finished <CMD/> type="boot" body="Recovery" file="imx28_BootCfg_ivt.sb" timeout="10" onError="" text="Enable unencrypted boot modes." SUCCESS code=0x0.
+Panel A Start <CMD/> type="wait" body="ResetToRecovery" file="" timeout="3" onError="" text="Waiting for Reset to Recovery.".
+Panel A UtpUpdate Event: DeviceRemoval Msg: (null) DevState: Disconnected OpState: WAITING_FOR_DEVICE
+Panel A UtpUpdate Event: DeviceArrival Msg: (null) DevState: Recovery OpState: WAITING_FOR_DEVICE
+1 - Panel A Finished <CMD/> type="wait" body="ResetToRecovery" file="" timeout="3" onError="" text="Waiting for Reset to Recovery." SUCCESS code=0x0.
+Panel A Start <CMD/> type="boot" body="Recovery" file="updater.sb" timeout="60" onError="" text="Booting update firmware.".
+1 - Panel A Finished <CMD/> type="boot" body="Recovery" file="updater.sb" timeout="60" onError="" text="Booting update firmware." SUCCESS code=0x0.
+Panel A Start <CMD/> type="boot" body="Recovery" file="updater_ivt.sb" timeout="60" onError="" text="Booting update firmware.".
+1 - Panel A Finished <CMD/> type="boot" body="Recovery" file="updater_ivt.sb" timeout="60" onError="" text="Booting update firmware." SUCCESS code=0x0.
+Panel A Start <CMD/> type="find" body="Updater" file="" timeout="180" onError="" text="".
+Panel A UtpUpdate Event: DeviceRemoval Msg: (null) DevState: Disconnected OpState: WAITING_FOR_DEVICE
+Panel A UtpUpdate Event: VolumeArrival Msg: (null) DevState: Updater OpState: WAITING_FOR_DEVICE
+1 - Panel A Finished <CMD/> type="find" body="Updater" file="" timeout="180" onError="" text="" SUCCESS code=0x0.
+Panel A Start <CMD/> type="push" body="mknod class/mtd,mtd0,/dev/mtd0" file="" timeout="180" onError="" text="".
+1 - Panel A Finished <CMD/> type="push" body="mknod class/mtd,mtd0,/dev/mtd0" file="" timeout="180" onError="" text="" SUCCESS code=0x0.
+Panel A Start <CMD/> type="push" body="mknod class/mtd,mtd1,/dev/mtd1" file="" timeout="180" onError="" text="".
+1 - Panel A Finished <CMD/> type="push" body="mknod class/mtd,mtd1,/dev/mtd1" file="" timeout="180" onError="" text="" SUCCESS code=0x0.
+Panel A Start <CMD/> type="push" body="mknod class/misc,ubi_ctrl,/dev/ubi_ctrl" file="" timeout="10" onError="" text="".
+1 - Panel A Finished <CMD/> type="push" body="mknod class/misc,ubi_ctrl,/dev/ubi_ctrl" file="" timeout="10" onError="" text="" SUCCESS code=0x0.
+Panel A Start <CMD/> type="push" body="$ flash_eraseall /dev/mtd0" file="" timeout="10" onError="" text="Erasing mtd0 partition".
+1 - Panel A Finished <CMD/> type="push" body="$ flash_eraseall /dev/mtd0" file="" timeout="10" onError="" text="Erasing mtd0 partition" SUCCESS code=0x0.
+Panel A Start <CMD/> type="push" body="$ flash_eraseall /dev/mtd1" file="" timeout="10" onError="" text="Erasing mtd1 partition".
+1 - Panel A Finished <CMD/> type="push" body="$ flash_eraseall /dev/mtd1" file="" timeout="10" onError="" text="Erasing mtd1 partition" SUCCESS code=0x0.
+Panel A Start <CMD/> type="push" body="send" file="files/imx28_ivt_uboot.sb" timeout="10" onError="" text="Sending uboot".
+1 - Panel A Finished <CMD/> type="push" body="send" file="files/imx28_ivt_uboot.sb" timeout="10" onError="" text="Sending uboot" SUCCESS code=0x0.
+Panel A Start <CMD/> type="push" body="$ kobs-ng init -v $FILE" file="" timeout="10" onError="" text="Flashing uboot firmware".
+1 - Panel A Finished <CMD/> type="push" body="$ kobs-ng init -v $FILE" file="" timeout="10" onError="" text="Flashing uboot firmware" SUCCESS code=0x0.
+Panel A Start <CMD/> type="push" body="$ flash_erase /dev/mtd0 0x200000 32" file="" timeout="10" onError="" text="Erasing 0x200000 32".
+1 - Panel A Finished <CMD/> type="push" body="$ flash_erase /dev/mtd0 0x200000 32" file="" timeout="10" onError="" text="Erasing 0x200000 32" SUCCESS code=0x0.
+Panel A Start <CMD/> type="push" body="send" file="files/uImage" timeout="10" onError="" text="Sending uImage".
+1 - Panel A Finished <CMD/> type="push" body="send" file="files/uImage" timeout="10" onError="" text="Sending uImage" SUCCESS code=0x0.
+Panel A Start <CMD/> type="push" body="$ dd if=$FILE of=/dev/mtdblock0 bs=1M seek=2" file="" timeout="10" onError="" text="Flashing uImage firmware".
+1 - Panel A Finished <CMD/> type="push" body="$ dd if=$FILE of=/dev/mtdblock0 bs=1M seek=2" file="" timeout="10" onError="" text="Flashing uImage firmware" SUCCESS code=0x0.
+Panel A Start <CMD/> type="push" body="$ ubiattach /dev/ubi_ctrl -m 1 -d 0" file="" timeout="10" onError="" text="Attaching UBI partition".
+1 - Panel A Finished <CMD/> type="push" body="$ ubiattach /dev/ubi_ctrl -m 1 -d 0" file="" timeout="10" onError="" text="Attaching UBI partition" SUCCESS code=0x0.
+Panel A Start <CMD/> type="push" body="mknod class/ubi,ubi0,/dev/ubi0" file="" timeout="10" onError="" text="".
+1 - Panel A Finished <CMD/> type="push" body="mknod class/ubi,ubi0,/dev/ubi0" file="" timeout="10" onError="" text="" SUCCESS code=0x0.
+Panel A Start <CMD/> type="push" body="$ ubimkvol /dev/ubi0 -n 0 -N rootfs -s 90000000" file="" timeout="10" onError="" text="Creating UBI volumes".
+1 - Panel A Finished <CMD/> type="push" body="$ ubimkvol /dev/ubi0 -n 0 -N rootfs -s 90000000" file="" timeout="10" onError="" text="Creating UBI volumes" SUCCESS code=0x0.
+Panel A Start <CMD/> type="push" body="$ mkdir -p /mnt/ubi0; mount -t ubifs ubi0_0 /mnt/ubi0" file="" timeout="10" onError="" text="".
+1 - Panel A Finished <CMD/> type="push" body="$ mkdir -p /mnt/ubi0; mount -t ubifs ubi0_0 /mnt/ubi0" file="" timeout="10" onError="" text="" SUCCESS code=0x0.
+Panel A Start <CMD/> type="push" body="pipe tar -jxv -C /mnt/ubi0" file="files/rootfs.tar.bz2" timeout="180" onError="" text="Transfer rootfs".
+1 - Panel A Finished <CMD/> type="push" body="pipe tar -jxv -C /mnt/ubi0" file="files/rootfs.tar.bz2" timeout="180" onError="" text="Transfer rootfs" SUCCESS code=0x0.
+Panel A Start <CMD/> type="push" body="frf" file="" timeout="10" onError="" text="Finish Flashing rootfs".
+1 - Panel A Finished <CMD/> type="push" body="frf" file="" timeout="10" onError="" text="Finish Flashing rootfs" SUCCESS code=0x0.
+Panel A Start <CMD/> type="push" body="$ umount /mnt/ubi0" file="" timeout="10" onError="" text="Unmounting".
+1 - Panel A Finished <CMD/> type="push" body="$ umount /mnt/ubi0" file="" timeout="10" onError="" text="Unmounting" SUCCESS code=0x0.
+Panel A Start <CMD/> type="push" body="$ echo Update Complete!" file="" timeout="10" onError="" text="Done".
+1 - Panel A Finished <CMD/> type="push" body="$ echo Update Complete!" file="" timeout="10" onError="" text="Done" SUCCESS code=0x0.
+
+Wednesday, October 12, 2016 10:41:45
+1 - Panel A Start processing NAND uboot Only <LIST/>.
+Panel A Start <CMD/> type="boot" body="Recovery" file="imx28_BootCfg.sb" timeout="10" onError="" text="Enable unencrypted boot modes.".
+1 - Panel A Finished <CMD/> type="boot" body="Recovery" file="imx28_BootCfg.sb" timeout="10" onError="" text="Enable unencrypted boot modes." SUCCESS code=0x0.
+Panel A Start <CMD/> type="boot" body="Recovery" file="imx28_BootCfg_ivt.sb" timeout="10" onError="" text="Enable unencrypted boot modes.".
+1 - Panel A Finished <CMD/> type="boot" body="Recovery" file="imx28_BootCfg_ivt.sb" timeout="10" onError="" text="Enable unencrypted boot modes." SUCCESS code=0x0.
+Panel A Start <CMD/> type="wait" body="ResetToRecovery" file="" timeout="3" onError="" text="Waiting for Reset to Recovery.".
+Panel A UtpUpdate Event: DeviceRemoval Msg: (null) DevState: Disconnected OpState: WAITING_FOR_DEVICE
+Panel A UtpUpdate Event: DeviceArrival Msg: (null) DevState: Recovery OpState: WAITING_FOR_DEVICE
+1 - Panel A Finished <CMD/> type="wait" body="ResetToRecovery" file="" timeout="3" onError="" text="Waiting for Reset to Recovery." SUCCESS code=0x0.
+Panel A Start <CMD/> type="boot" body="Recovery" file="updater.sb" timeout="60" onError="" text="Booting update firmware.".
+1 - Panel A Finished <CMD/> type="boot" body="Recovery" file="updater.sb" timeout="60" onError="" text="Booting update firmware." SUCCESS code=0x0.
+Panel A Start <CMD/> type="boot" body="Recovery" file="updater_ivt.sb" timeout="60" onError="" text="Booting update firmware.".
+1 - Panel A Finished <CMD/> type="boot" body="Recovery" file="updater_ivt.sb" timeout="60" onError="" text="Booting update firmware." SUCCESS code=0x0.
+Panel A Start <CMD/> type="find" body="Updater" file="" timeout="180" onError="" text="".
+Panel A UtpUpdate Event: DeviceRemoval Msg: (null) DevState: Disconnected OpState: WAITING_FOR_DEVICE
+Panel A UtpUpdate Event: VolumeArrival Msg: (null) DevState: Updater OpState: WAITING_FOR_DEVICE
+1 - Panel A Finished <CMD/> type="find" body="Updater" file="" timeout="180" onError="" text="" SUCCESS code=0x0.
+Panel A Start <CMD/> type="push" body="mknod class/mtd,mtd0,/dev/mtd0" file="" timeout="10" onError="" text="".
+1 - Panel A Finished <CMD/> type="push" body="mknod class/mtd,mtd0,/dev/mtd0" file="" timeout="10" onError="" text="" SUCCESS code=0x0.
+Panel A Start <CMD/> type="push" body="mknod class/mtd,mtd1,/dev/mtd1" file="" timeout="10" onError="" text="".
+1 - Panel A Finished <CMD/> type="push" body="mknod class/mtd,mtd1,/dev/mtd1" file="" timeout="10" onError="" text="" SUCCESS code=0x0.
+Panel A Start <CMD/> type="push" body="mknod class/misc,ubi_ctrl,/dev/ubi_ctrl" file="" timeout="10" onError="" text="".
+1 - Panel A Finished <CMD/> type="push" body="mknod class/misc,ubi_ctrl,/dev/ubi_ctrl" file="" timeout="10" onError="" text="" SUCCESS code=0x0.
+Panel A Start <CMD/> type="push" body="$ flash_eraseall /dev/mtd0" file="" timeout="10" onError="" text="Erasing rootfs partition".
+1 - Panel A Finished <CMD/> type="push" body="$ flash_eraseall /dev/mtd0" file="" timeout="10" onError="" text="Erasing rootfs partition" SUCCESS code=0x0.
+Panel A Start <CMD/> type="push" body="send" file="files/imx28_ivt_uboot.sb" timeout="10" onError="" text="Sending firmware".
+1 - Panel A Finished <CMD/> type="push" body="send" file="files/imx28_ivt_uboot.sb" timeout="10" onError="" text="Sending firmware" SUCCESS code=0x0.
+Panel A Start <CMD/> type="push" body="$ kobs-ng init -v $FILE" file="" timeout="10" onError="" text="Flashing firmware".
+1 - Panel A Finished <CMD/> type="push" body="$ kobs-ng init -v $FILE" file="" timeout="10" onError="" text="Flashing firmware" SUCCESS code=0x0.
+Panel A Start <CMD/> type="push" body="$ echo Update Complete!" file="" timeout="10" onError="" text="Done".
+1 - Panel A Finished <CMD/> type="push" body="$ echo Update Complete!" file="" timeout="10" onError="" text="Done" SUCCESS code=0x0.
+Panel A UtpUpdate Event: DeviceRemoval Msg: (null) DevState: Disconnected OpState: WAITING_FOR_DEVICE
+Panel A UtpUpdate Event: VolumeRemoval Msg: (null) DevState: Disconnected OpState: WAITING_FOR_DEVICE
+Panel A UtpUpdate Event: DeviceArrival Msg: (null) DevState: Recovery OpState: WAITING_FOR_DEVICE
+2 - Panel A Start processing NAND uboot Only <LIST/>.
+Panel A Start <CMD/> type="boot" body="Recovery" file="imx28_BootCfg.sb" timeout="10" onError="" text="Enable unencrypted boot modes.".
+2 - Panel A Finished <CMD/> type="boot" body="Recovery" file="imx28_BootCfg.sb" timeout="10" onError="" text="Enable unencrypted boot modes." SUCCESS code=0x0.
+Panel A Start <CMD/> type="boot" body="Recovery" file="imx28_BootCfg_ivt.sb" timeout="10" onError="" text="Enable unencrypted boot modes.".
+2 - Panel A Finished <CMD/> type="boot" body="Recovery" file="imx28_BootCfg_ivt.sb" timeout="10" onError="" text="Enable unencrypted boot modes." SUCCESS code=0x0.
+Panel A Start <CMD/> type="wait" body="ResetToRecovery" file="" timeout="3" onError="" text="Waiting for Reset to Recovery.".
+Panel A UtpUpdate Event: DeviceRemoval Msg: (null) DevState: Disconnected OpState: WAITING_FOR_DEVICE
+Panel A UtpUpdate Event: DeviceArrival Msg: (null) DevState: Recovery OpState: WAITING_FOR_DEVICE
+2 - Panel A Finished <CMD/> type="wait" body="ResetToRecovery" file="" timeout="3" onError="" text="Waiting for Reset to Recovery." SUCCESS code=0x0.
+Panel A Start <CMD/> type="boot" body="Recovery" file="updater.sb" timeout="60" onError="" text="Booting update firmware.".
+2 - Panel A Finished <CMD/> type="boot" body="Recovery" file="updater.sb" timeout="60" onError="" text="Booting update firmware." SUCCESS code=0x0.
+Panel A Start <CMD/> type="boot" body="Recovery" file="updater_ivt.sb" timeout="60" onError="" text="Booting update firmware.".
+2 - Panel A Finished <CMD/> type="boot" body="Recovery" file="updater_ivt.sb" timeout="60" onError="" text="Booting update firmware." SUCCESS code=0x0.
+Panel A Start <CMD/> type="find" body="Updater" file="" timeout="180" onError="" text="".
+Panel A UtpUpdate Event: DeviceRemoval Msg: (null) DevState: Disconnected OpState: WAITING_FOR_DEVICE
+Panel A UtpUpdate Event: VolumeArrival Msg: (null) DevState: Updater OpState: WAITING_FOR_DEVICE
+2 - Panel A Finished <CMD/> type="find" body="Updater" file="" timeout="180" onError="" text="" SUCCESS code=0x0.
+Panel A Start <CMD/> type="push" body="mknod class/mtd,mtd0,/dev/mtd0" file="" timeout="10" onError="" text="".
+2 - Panel A Finished <CMD/> type="push" body="mknod class/mtd,mtd0,/dev/mtd0" file="" timeout="10" onError="" text="" SUCCESS code=0x0.
+Panel A Start <CMD/> type="push" body="mknod class/mtd,mtd1,/dev/mtd1" file="" timeout="10" onError="" text="".
+2 - Panel A Finished <CMD/> type="push" body="mknod class/mtd,mtd1,/dev/mtd1" file="" timeout="10" onError="" text="" SUCCESS code=0x0.
+Panel A Start <CMD/> type="push" body="mknod class/misc,ubi_ctrl,/dev/ubi_ctrl" file="" timeout="10" onError="" text="".
+2 - Panel A Finished <CMD/> type="push" body="mknod class/misc,ubi_ctrl,/dev/ubi_ctrl" file="" timeout="10" onError="" text="" SUCCESS code=0x0.
+Panel A Start <CMD/> type="push" body="$ flash_eraseall /dev/mtd0" file="" timeout="10" onError="" text="Erasing rootfs partition".
+2 - Panel A Finished <CMD/> type="push" body="$ flash_eraseall /dev/mtd0" file="" timeout="10" onError="" text="Erasing rootfs partition" SUCCESS code=0x0.
+Panel A Start <CMD/> type="push" body="send" file="files/imx28_ivt_uboot.sb" timeout="10" onError="" text="Sending firmware".
+2 - Panel A Finished <CMD/> type="push" body="send" file="files/imx28_ivt_uboot.sb" timeout="10" onError="" text="Sending firmware" SUCCESS code=0x0.
+Panel A Start <CMD/> type="push" body="$ kobs-ng init -v $FILE" file="" timeout="10" onError="" text="Flashing firmware".
+2 - Panel A Finished <CMD/> type="push" body="$ kobs-ng init -v $FILE" file="" timeout="10" onError="" text="Flashing firmware" SUCCESS code=0x0.
+Panel A Start <CMD/> type="push" body="$ echo Update Complete!" file="" timeout="10" onError="" text="Done".
+2 - Panel A Finished <CMD/> type="push" body="$ echo Update Complete!" file="" timeout="10" onError="" text="Done" SUCCESS code=0x0.
+Panel A UtpUpdate Event: DeviceRemoval Msg: (null) DevState: Disconnected OpState: WAITING_FOR_DEVICE
+Panel A UtpUpdate Event: VolumeRemoval Msg: (null) DevState: Disconnected OpState: WAITING_FOR_DEVICE
+Panel A UtpUpdate Event: DeviceArrival Msg: (null) DevState: Recovery OpState: WAITING_FOR_DEVICE
+3 - Panel A Start processing NAND uboot Only <LIST/>.
+Panel A Start <CMD/> type="boot" body="Recovery" file="imx28_BootCfg.sb" timeout="10" onError="" text="Enable unencrypted boot modes.".
+3 - Panel A Finished <CMD/> type="boot" body="Recovery" file="imx28_BootCfg.sb" timeout="10" onError="" text="Enable unencrypted boot modes." SUCCESS code=0x0.
+Panel A Start <CMD/> type="boot" body="Recovery" file="imx28_BootCfg_ivt.sb" timeout="10" onError="" text="Enable unencrypted boot modes.".
+3 - Panel A Finished <CMD/> type="boot" body="Recovery" file="imx28_BootCfg_ivt.sb" timeout="10" onError="" text="Enable unencrypted boot modes." SUCCESS code=0x0.
+Panel A Start <CMD/> type="wait" body="ResetToRecovery" file="" timeout="3" onError="" text="Waiting for Reset to Recovery.".
+Panel A UtpUpdate Event: DeviceRemoval Msg: (null) DevState: Disconnected OpState: WAITING_FOR_DEVICE
+Panel A UtpUpdate Event: DeviceArrival Msg: (null) DevState: Recovery OpState: WAITING_FOR_DEVICE
+Panel A: Reason is unknown,
+Wednesday, October 12, 2016 10:48:40
+3 - Panel A Start processing NAND uboot Only <LIST/>.
+Panel A Start <CMD/> type="boot" body="Recovery" file="imx28_BootCfg.sb" timeout="10" onError="" text="Enable unencrypted boot modes.".
+3 - Panel A Finished <CMD/> type="boot" body="Recovery" file="imx28_BootCfg.sb" timeout="10" onError="" text="Enable unencrypted boot modes." SUCCESS code=0x0.
+Panel A Start <CMD/> type="boot" body="Recovery" file="imx28_BootCfg_ivt.sb" timeout="10" onError="" text="Enable unencrypted boot modes.".
+3 - Panel A Finished <CMD/> type="wait" body="ResetToRecovery" file="" timeout="3" onError="" text="Waiting for Reset to Recovery." SUCCESS code=0x0.
+Panel A Start <CMD/> type="boot" body="Recovery" file="updater.sb" timeout="60" onError="" text="Booting update firmware.".
+3 - Panel A Finished <CMD/> type="boot" body="Recovery" file="updater.sb" timeout="60" onError="" text="Booting update firmware." SUCCESS code=0x0.
+Panel A Start <CMD/> type="boot" body="Recovery" file="updater_ivt.sb" timeout="60" onError="" text="Booting update firmware.".
+3 - Panel A Finished <CMD/> type="boot" body="Recovery" file="imx28_BootCfg_ivt.sb" timeout="10" onError="" text="Enable unencrypted boot modes." SUCCESS code=0x0.
+3 - Panel A DoBoot() - Failed to load updater_ivt.sb to Recovery mode device. (err=1167)
+3 - Panel A Finished <CMD/> type="boot" body="Recovery" file="updater_ivt.sb" timeout="60" onError="" text="Booting update firmware." FAIL code=0x48f.
+Panel A Start <CMD/> type="wait" body="ResetToRecovery" file="" timeout="3" onError="" text="Waiting for Reset to Recovery.".
+Panel A: Reason is unknown,failed to run command: type="boot" body="Recovery" file="updater_ivt.sb" timeout="60" onError="" text="Booting update firmware."  4 - Panel A Finished processing NAND uboot Only <LIST/> : FAIL code=1167.
+Panel A UtpUpdate Event: DeviceRemoval Msg: (null) DevState: Disconnected OpState: WAITING_FOR_DEVICE
+4 - Panel A Start processing NAND uboot Only <LIST/>.
+Panel A UtpUpdate Event: DeviceArrival Msg: (null) DevState: Recovery OpState: OP_UNKNOWN_STATE
+Panel A Start <CMD/> type="boot" body="Recovery" file="imx28_BootCfg.sb" timeout="10" onError="" text="Enable unencrypted boot modes.".
+4 - Panel A Finished <CMD/> type="boot" body="Recovery" file="imx28_BootCfg.sb" timeout="10" onError="" text="Enable unencrypted boot modes." SUCCESS code=0x0.
+Panel A Start <CMD/> type="boot" body="Recovery" file="imx28_BootCfg_ivt.sb" timeout="10" onError="" text="Enable unencrypted boot modes.".
+Panel A: Reason is unknown,4 - Panel A Finished <CMD/> type="boot" body="Recovery" file="imx28_BootCfg_ivt.sb" timeout="10" onError="" text="Enable unencrypted boot modes." SUCCESS code=0x0.
+4 - Panel A Finished <CMD/> type="wait" body="ResetToRecovery" file="" timeout="3" onError="" text="Waiting for Reset to Recovery." SUCCESS code=0x0.
+
+Wednesday, October 12, 2016 10:48:43
+4 - Panel A Start processing NAND uboot Only <LIST/>.
+Panel A Start <CMD/> type="boot" body="Recovery" file="imx28_BootCfg.sb" timeout="10" onError="" text="Enable unencrypted boot modes.".
+4 - Panel A Finished <CMD/> type="boot" body="Recovery" file="imx28_BootCfg.sb" timeout="10" onError="" text="Enable unencrypted boot modes." SUCCESS code=0x0.
+Panel A Start <CMD/> type="boot" body="Recovery" file="imx28_BootCfg_ivt.sb" timeout="10" onError="" text="Enable unencrypted boot modes.".
+4 - Panel A Finished <CMD/> type="boot" body="Recovery" file="imx28_BootCfg_ivt.sb" timeout="10" onError="" text="Enable unencrypted boot modes." SUCCESS code=0x0.
+Panel A Start <CMD/> type="wait" body="ResetToRecovery" file="" timeout="3" onError="" text="Waiting for Reset to Recovery.".
+Panel A UtpUpdate Event: DeviceRemoval Msg: (null) DevState: Disconnected OpState: WAITING_FOR_DEVICE
+Panel A UtpUpdate Event: DeviceArrival Msg: (null) DevState: Recovery OpState: WAITING_FOR_DEVICE
+4 - Panel A Finished <CMD/> type="wait" body="ResetToRecovery" file="" timeout="3" onError="" text="Waiting for Reset to Recovery." SUCCESS code=0x0.
+Panel A Start <CMD/> type="boot" body="Recovery" file="updater.sb" timeout="60" onError="" text="Booting update firmware.".
+4 - Panel A Finished <CMD/> type="boot" body="Recovery" file="updater.sb" timeout="60" onError="" text="Booting update firmware." SUCCESS code=0x0.
+Panel A Start <CMD/> type="boot" body="Recovery" file="updater_ivt.sb" timeout="60" onError="" text="Booting update firmware.".
+4 - Panel A Finished <CMD/> type="boot" body="Recovery" file="updater_ivt.sb" timeout="60" onError="" text="Booting update firmware." SUCCESS code=0x0.
+Panel A Start <CMD/> type="find" body="Updater" file="" timeout="180" onError="" text="".
+Panel A UtpUpdate Event: DeviceRemoval Msg: (null) DevState: Disconnected OpState: WAITING_FOR_DEVICE
+Panel A UtpUpdate Event: VolumeArrival Msg: (null) DevState: Updater OpState: WAITING_FOR_DEVICE
+4 - Panel A Finished <CMD/> type="find" body="Updater" file="" timeout="180" onError="" text="" SUCCESS code=0x0.
+Panel A Start <CMD/> type="push" body="mknod class/mtd,mtd0,/dev/mtd0" file="" timeout="10" onError="" text="".
+4 - Panel A Finished <CMD/> type="push" body="mknod class/mtd,mtd0,/dev/mtd0" file="" timeout="10" onError="" text="" SUCCESS code=0x0.
+Panel A Start <CMD/> type="push" body="mknod class/mtd,mtd1,/dev/mtd1" file="" timeout="10" onError="" text="".
+4 - Panel A Finished <CMD/> type="push" body="mknod class/mtd,mtd1,/dev/mtd1" file="" timeout="10" onError="" text="" SUCCESS code=0x0.
+Panel A Start <CMD/> type="push" body="mknod class/misc,ubi_ctrl,/dev/ubi_ctrl" file="" timeout="10" onError="" text="".
+4 - Panel A Finished <CMD/> type="push" body="mknod class/misc,ubi_ctrl,/dev/ubi_ctrl" file="" timeout="10" onError="" text="" SUCCESS code=0x0.
+Panel A Start <CMD/> type="push" body="$ flash_eraseall /dev/mtd0" file="" timeout="10" onError="" text="Erasing rootfs partition".
+4 - Panel A Finished <CMD/> type="push" body="$ flash_eraseall /dev/mtd0" file="" timeout="10" onError="" text="Erasing rootfs partition" SUCCESS code=0x0.
+Panel A Start <CMD/> type="push" body="send" file="files/imx28_ivt_uboot.sb" timeout="10" onError="" text="Sending firmware".
+4 - Panel A Finished <CMD/> type="push" body="send" file="files/imx28_ivt_uboot.sb" timeout="10" onError="" text="Sending firmware" SUCCESS code=0x0.
+Panel A Start <CMD/> type="push" body="$ kobs-ng init -v $FILE" file="" timeout="10" onError="" text="Flashing firmware".
+4 - Panel A Finished <CMD/> type="push" body="$ kobs-ng init -v $FILE" file="" timeout="10" onError="" text="Flashing firmware" SUCCESS code=0x0.
+Panel A Start <CMD/> type="push" body="$ echo Update Complete!" file="" timeout="10" onError="" text="Done".
+4 - Panel A Finished <CMD/> type="push" body="$ echo Update Complete!" file="" timeout="10" onError="" text="Done" SUCCESS code=0x0.
+
+Wednesday, October 12, 2016 10:59:03
+5 - Panel A Start processing NAND uboot Only <LIST/>.
+Panel A Start <CMD/> type="boot" body="Recovery" file="imx28_BootCfg.sb" timeout="10" onError="" text="Enable unencrypted boot modes.".
+5 - Panel A Finished <CMD/> type="boot" body="Recovery" file="imx28_BootCfg.sb" timeout="10" onError="" text="Enable unencrypted boot modes." SUCCESS code=0x0.
+Panel A Start <CMD/> type="boot" body="Recovery" file="imx28_BootCfg_ivt.sb" timeout="10" onError="" text="Enable unencrypted boot modes.".
+5 - Panel A Finished <CMD/> type="boot" body="Recovery" file="imx28_BootCfg_ivt.sb" timeout="10" onError="" text="Enable unencrypted boot modes." SUCCESS code=0x0.
+Panel A Start <CMD/> type="wait" body="ResetToRecovery" file="" timeout="3" onError="" text="Waiting for Reset to Recovery.".
+Panel A UtpUpdate Event: DeviceRemoval Msg: (null) DevState: Disconnected OpState: WAITING_FOR_DEVICE
+Panel A UtpUpdate Event: DeviceArrival Msg: (null) DevState: Recovery OpState: WAITING_FOR_DEVICE
+5 - Panel A Finished <CMD/> type="wait" body="ResetToRecovery" file="" timeout="3" onError="" text="Waiting for Reset to Recovery." SUCCESS code=0x0.
+Panel A Start <CMD/> type="boot" body="Recovery" file="updater.sb" timeout="60" onError="" text="Booting update firmware.".
+5 - Panel A Finished <CMD/> type="boot" body="Recovery" file="updater.sb" timeout="60" onError="" text="Booting update firmware." SUCCESS code=0x0.
+Panel A Start <CMD/> type="boot" body="Recovery" file="updater_ivt.sb" timeout="60" onError="" text="Booting update firmware.".
+5 - Panel A Finished <CMD/> type="boot" body="Recovery" file="updater_ivt.sb" timeout="60" onError="" text="Booting update firmware." SUCCESS code=0x0.
+Panel A Start <CMD/> type="find" body="Updater" file="" timeout="180" onError="" text="".
+Panel A UtpUpdate Event: DeviceRemoval Msg: (null) DevState: Disconnected OpState: WAITING_FOR_DEVICE
+Panel A UtpUpdate Event: VolumeArrival Msg: (null) DevState: Updater OpState: WAITING_FOR_DEVICE
+5 - Panel A Finished <CMD/> type="find" body="Updater" file="" timeout="180" onError="" text="" SUCCESS code=0x0.
+Panel A Start <CMD/> type="push" body="mknod class/mtd,mtd0,/dev/mtd0" file="" timeout="10" onError="" text="".
+5 - Panel A Finished <CMD/> type="push" body="mknod class/mtd,mtd0,/dev/mtd0" file="" timeout="10" onError="" text="" SUCCESS code=0x0.
+Panel A Start <CMD/> type="push" body="mknod class/mtd,mtd1,/dev/mtd1" file="" timeout="10" onError="" text="".
+5 - Panel A Finished <CMD/> type="push" body="mknod class/mtd,mtd1,/dev/mtd1" file="" timeout="10" onError="" text="" SUCCESS code=0x0.
+Panel A Start <CMD/> type="push" body="mknod class/misc,ubi_ctrl,/dev/ubi_ctrl" file="" timeout="10" onError="" text="".
+5 - Panel A Finished <CMD/> type="push" body="mknod class/misc,ubi_ctrl,/dev/ubi_ctrl" file="" timeout="10" onError="" text="" SUCCESS code=0x0.
+Panel A Start <CMD/> type="push" body="$ flash_eraseall /dev/mtd0" file="" timeout="10" onError="" text="Erasing rootfs partition".
+5 - Panel A Finished <CMD/> type="push" body="$ flash_eraseall /dev/mtd0" file="" timeout="10" onError="" text="Erasing rootfs partition" SUCCESS code=0x0.
+Panel A Start <CMD/> type="push" body="send" file="files/imx28_ivt_uboot.sb" timeout="10" onError="" text="Sending firmware".
+5 - Panel A Finished <CMD/> type="push" body="send" file="files/imx28_ivt_uboot.sb" timeout="10" onError="" text="Sending firmware" SUCCESS code=0x0.
+Panel A Start <CMD/> type="push" body="$ kobs-ng init -v $FILE" file="" timeout="10" onError="" text="Flashing firmware".
+5 - Panel A Finished <CMD/> type="push" body="$ kobs-ng init -v $FILE" file="" timeout="10" onError="" text="Flashing firmware" SUCCESS code=0x0.
+Panel A Start <CMD/> type="push" body="$ echo Update Complete!" file="" timeout="10" onError="" text="Done".
+5 - Panel A Finished <CMD/> type="push" body="$ echo Update Complete!" file="" timeout="10" onError="" text="Done" SUCCESS code=0x0.
